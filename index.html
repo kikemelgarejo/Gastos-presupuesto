@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using ES6"
+    />
+    <title>Gasto y Presupuesto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+  </head>
+  <body onload="">
+    <div class="container">
+        <h1>Gasto Semanal</h1>
+        <div class="contenido-principal contenido">
+          <div class="row">
+            <div id="pregunta">
+              <h2>Ingresa tu presupuesto</h2>
+              <div id="msj_error_pregunta"></div>
+              <form>
+                <input 
+                type="number"
+                id="presupuestoInicial"
+                class="u-full-width"
+                placeholder="Ingrese su presupuesto">
+                <input 
+                type="button"
+                onclick=""
+                class="button-primary u-full-width"
+                value="Crear Presupuesto">
+              </form>
+            </div>
+
+            <div id="divGastos">
+              <div class="one-half column">
+
+                <div id="divCrearGasto">
+                  <form id="formGastos">
+                    <h2>Agrega tus gastos aquí</h2>
+                    <div id="msj_error_creargasto"></div>
+                    <div class="campo">
+                      <label>Nombre Gasto</label>
+                      <input 
+                      type="text"
+                      class="u-full-width"
+                      placeholder="Ej. Transporte"
+                      id="tipoGasto">
+                    </div>
+
+                    <div class="campo">
+                      <label>Cantidad del Gasto</label>
+                      <input 
+                      type="number"
+                      class="u-full-width"
+                      placeholder="Ej. 300"
+                      id="cantidadGasto">
+                    </div>
+
+                      <input 
+                      type="button"
+                      onclick=""
+                      class="button-primary u-full-width"
+                      value="Agregar Gasto">  
+                  </form>
+                </div>
+                
+              </div>
+
+              <div class="one-half column" id="divControlGastos">
+              </div>
+            </div>
+
+          </div>
+        </div>
+    </div>
+
+  </body>
+</html>
