@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="main.js"></script>
   </head>
-  <body onload="">
+  <body onload="actualizarVista()">
     <div class="container">
         <h1>Gasto Semanal</h1>
         <div class="contenido-principal contenido">
@@ -31,7 +31,7 @@
                 placeholder="Ingrese su presupuesto">
                 <input 
                 type="button"
-                onclick=""
+                onclick="guardarPresupuesto()"
                 class="button-primary u-full-width"
                 value="Crear Presupuesto">
               </form>
